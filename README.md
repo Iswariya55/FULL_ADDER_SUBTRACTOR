@@ -37,10 +37,11 @@ Diff = A ⊕ B ⊕ Bin
 Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
+![WhatsApp Image 2024-12-10 at 08 03 01_c70df803](https://github.com/user-attachments/assets/509426a3-c2f0-487c-86e0-21e0be0fdd03)
+![WhatsApp Image 2024-12-10 at 08 03 01_9fd92486](https://github.com/user-attachments/assets/8e469a07-1e69-41ec-8fb2-9a431b57e978)
 
 **Procedure**
 
-Write the detailed procedure here
 
 **Program:**
 
@@ -48,8 +49,12 @@ Write the detailed procedure here
 */
 
 **RTL Schematic**
+![WhatsApp Image 2024-12-08 at 14 33 17_9951e924](https://github.com/user-attachments/assets/07d8cafe-cb55-4a22-ae42-b08dc73498c2)
+![WhatsApp Image 2024-12-08 at 14 33 18_5a3f5004](https://github.com/user-attachments/assets/d7858aa3-04ac-4c44-a4a1-fae2fe30c807)
 
 **Output Timing Waveform**
+![WhatsApp Image 2024-12-08 at 14 33 17_9d29a5e2](https://github.com/user-attachments/assets/4e6957ad-6947-4f12-bd94-0be56075d03e)
+![WhatsApp Image 2024-12-08 at 14 33 18_5ebf0d92](https://github.com/user-attachments/assets/3c2e8907-6648-4474-8e01-406825220fd2)
 
 **Result:**
 
