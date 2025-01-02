@@ -22,9 +22,13 @@ Sum =A’B’Cin + A’BCin’ + ABCin + AB’Cin’ = A ⊕ B ⊕ Cin
 
 Carry = AB + ACin + BCin
 
-![image](https://github.com/naavaneetha/FULL_ADDER_SUBTRACTOR/assets/154305477/0f30ba51-5ffb-4198-845f-18e054f675e7)
+![Screenshot 2025-01-02 153408](https://github.com/user-attachments/assets/e2a764b0-187e-4f78-b9e2-bd2a81beb6ea)
 
-**Figure -1 FULL ADDER**
+
+FULL ADDER truth table
+
+![Screenshot 2025-01-02 153549](https://github.com/user-attachments/assets/5bdb0d28-e3c5-40d2-adcd-1f6f791a8ec9)
+
 
 **Full Subtractor**
 
@@ -36,9 +40,10 @@ Diff = A ⊕ B ⊕ Bin
 
 Borrow out = A'Bin + A'B + BBin
 
-**Truthtable**
-![WhatsApp Image 2024-12-10 at 08 03 01_c70df803](https://github.com/user-attachments/assets/509426a3-c2f0-487c-86e0-21e0be0fdd03)
-![WhatsApp Image 2024-12-10 at 08 03 01_9fd92486](https://github.com/user-attachments/assets/8e469a07-1e69-41ec-8fb2-9a431b57e978)
+
+ Full Subtractor Truth table
+
+ ![Screenshot 2025-01-02 153739](https://github.com/user-attachments/assets/bc0b3b0a-8e9f-4758-b9dc-d53542d0850a)
 
 **Procedure**
 1. Type the program in Quartus software.
@@ -50,15 +55,45 @@ Borrow out = A'Bin + A'B + BBin
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
+/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by:ishwarya R RegisterNumber:24900725
 */
 
+**Full adder**
+
+module fa(A,B,Cin,sum,carry);
+ input A,B,Cin;
+ output sum,carry;
+ assign sum=(A^B^Cin);
+ assign carry=(A&B)|((A^B)&Cin);
+ endmodule
+
+ **full subtractor**
+
+  module fs(A,B,Bin,diff,borr);
+ input A,B,Bin;
+ output diff,borr;
+ assign diff=(A^B^Bin);
+ assign borr=((~A&B)|(~(A^B)&Bin));
+ endmodule
+ 
 **RTL Schematic**
+
+**full adder**
+
 ![WhatsApp Image 2024-12-08 at 14 33 17_9951e924](https://github.com/user-attachments/assets/07d8cafe-cb55-4a22-ae42-b08dc73498c2)
+
+**full subtractor**
+
 ![WhatsApp Image 2024-12-08 at 14 33 18_5a3f5004](https://github.com/user-attachments/assets/d7858aa3-04ac-4c44-a4a1-fae2fe30c807)
 
 **Output Timing Waveform**
+
+**full adder**
+
 ![WhatsApp Image 2024-12-08 at 14 33 17_9d29a5e2](https://github.com/user-attachments/assets/4e6957ad-6947-4f12-bd94-0be56075d03e)
+
+**full subtractor**
+
 ![WhatsApp Image 2024-12-08 at 14 33 18_5ebf0d92](https://github.com/user-attachments/assets/3c2e8907-6648-4474-8e01-406825220fd2)
 
 **Result:**
