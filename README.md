@@ -60,22 +60,13 @@ Borrow out = A'Bin + A'B + BBin
 
 **Full adder**
 
-module fa(A,B,Cin,sum,carry);
- input A,B,Cin;
- output sum,carry;
- assign sum=(A^B^Cin);
- assign carry=(A&B)|((A^B)&Cin);
- endmodule
+![Screenshot 2025-01-02 165836](https://github.com/user-attachments/assets/d9e8bce0-d59c-4528-8855-643b405026b2)
+
 
  **full subtractor**
 
-  module fs(A,B,Bin,diff,borr);
- input A,B,Bin;
- output diff,borr;
- assign diff=(A^B^Bin);
- assign borr=((~A&B)|(~(A^B)&Bin));
- endmodule
- 
+![Screenshot 2025-01-02 165812](https://github.com/user-attachments/assets/a3a29a57-1879-4763-acbd-ae2684c6a671)
+
 **RTL Schematic**
 
 **full adder**
